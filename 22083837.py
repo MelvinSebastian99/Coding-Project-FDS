@@ -50,11 +50,11 @@ plt.hist(data['Salary'], bins=30, density=True,
 plt.plot(val, pdf, label='Probability Density Function',)
 plt.axvline(mean_salary, color='red', linestyle='dashed',
             linewidth=2, label=f'Mean Salary ($\~{{W}}$): {mean_salary}')
-plt.axvspan(lower_bound, upper_bound, color='green', alpha=0.3,
+plt.axvspan(lower_bound, upper_bound, color='yellow', alpha=0.3,
             label=f'Population Fraction (X): {fraction_population_rounded}')
 plt.xlabel('Salary (Euros)')
-plt.ylabel('Density')
-plt.title('Probability Density Function of Salaries')
+plt.ylabel('Probability Density')
+plt.title('Probability Density Function of Annual Salaries')
 plt.xlim(0, plt.xlim()[1])
 plt.ylim(0, plt.ylim()[1])
 plt.legend()
